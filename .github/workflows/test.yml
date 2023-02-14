@@ -1,0 +1,9 @@
+name: test
+on:
+    push:
+
+jobs:
+  test:
+    steps:
+      - name: test1
+        run: echo '${{ github.event.pullrequest }}'
