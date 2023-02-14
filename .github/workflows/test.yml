@@ -9,10 +9,10 @@ jobs:
       - name: test1
         run: echo '${{ toJSON(github) }}'
       - name: test2
-        run: echo '${{ toJSON(github.user) }}'
+        run: echo '${{ toJSON(github.event.user) }}'
       - name: test3
-        run: echo '${{ github.user.login }}'
+        run: echo '${{ github.event.user.login }}'
       - name: test4
-        run: echo '${{ toJSON(github.base.user) }}'
+        run: echo '${{ toJSON(github.event.base.user) }}'
       - name: test5
-        run: echo '${{ github.base.user.login }}'
+        run: echo '${{ github.event.base.user.login }}'
