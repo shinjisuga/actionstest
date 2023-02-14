@@ -8,3 +8,7 @@ jobs:
     steps:
       - name: test1
         run: echo '${{ toJSON(github) }}'
+      - name: test2
+        run: echo '${{ toJSON(github.user) }}'
+      - name: test3
+        run: echo '${{ github.user.login }}'
