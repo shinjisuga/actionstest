@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test1
-        run: echo '${{ github.event.pullrequest.user.id }}'
+        run: echo 'aa ${{ github.event.pullrequest.user.id }}'
