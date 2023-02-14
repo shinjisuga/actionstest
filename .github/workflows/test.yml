@@ -12,3 +12,7 @@ jobs:
         run: echo '${{ toJSON(github.user) }}'
       - name: test3
         run: echo '${{ github.user.login }}'
+      - name: test4
+        run: echo '${{ toJSON(github.base.user) }}'
+      - name: test5
+        run: echo '${{ github.base.user.login }}'
